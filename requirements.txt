@@ -1,0 +1,7 @@
+fake_useragent==0.1.11
+fire==0.4.0
+loguru==0.5.3
+lxml==4.5.0
+prettytable==3.0.0
+requests==2.25.1
+urllib3==1.26.5
