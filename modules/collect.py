@@ -57,7 +57,7 @@ class Collect(object):
             t.start()
 
         for t in threads:
-            t.join(5*60)
+            t.join(6*60)
 
         for t in threads:
             if t.is_alive():

@@ -4,7 +4,7 @@
 
 ## 0x1 介绍
 
-:astonished: `EmailAll` is a powerful Email Collect tool
+:astonished: `EmailAll` is a powerful Email Collect tool —— 一款强大的邮箱收集工具
 
 ![example1](img/example1.png)
 
@@ -31,6 +31,8 @@ Example:
 
 `python3 emailall.py --domains ./domains.txt run`
 
+最终结果保存至`result`目录，分为不同模块json数据文件和汇总`{domain}_All.json`文件
+
 ## 0x3 配置
 
 proxy配置在 [setting.py](config/setting.py)文件
@@ -42,9 +44,12 @@ proxy={'http': '127.0.0.1:2333', 'https': '127.0.0.1:2333'}
 API配置在 [api.py](config/api.py)文件
 
 ```python
-# http://veryvp.com/
+# http://www.veryvp.com/
 veryvp_username = ''
 veryvp_password = ''
+
+# https://www.github.com
+github_token = ''
 ```
 
 ## 0x4 模块
@@ -59,12 +64,21 @@ veryvp_password = ''
   - QWant
   - SO
   - Sougou
+  - GithubApi
 - DataSets
   - Email-Format
   - Skymem
   - Veryvp
 
+### 2022.2.16
+
+更新GithubApi模块
+
+![githubapi](img/githubapi.png)
+
 > 后续还会更新~
+
+更多信息请关注[changes.md](docs/changes.md)
 
 ## 0x5 参考
 

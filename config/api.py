@@ -12,3 +12,6 @@ API 配置文件
 # http://www.veryvp.com/
 veryvp_username = ''
 veryvp_password = ''
+
+# https://www.github.com
+github_token = ''
