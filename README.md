@@ -10,6 +10,8 @@
 
 ![example2](img/example2.png)
 
+![PhoneBook&Snov_result](img/PhoneBook&Snov_result.png)
+
 ## 0x2 安装&使用
 
 ```bash
@@ -50,7 +52,18 @@ veryvp_password = ''
 
 # https://www.github.com
 github_token = ''
+
+# https://app.snov.io/
+snov_username = ''
+snov_password = ''
+
+# https://phonebook.cz/
+pb_key = ''
 ```
+
+- `veryvp`和`snov`去网站免费注册
+- `GitHub`的token去设置里创建一个即可
+- `phonebook`的key访问https://phonebook.cz/然后查看源代码，将`API_KEY`的值填入即可
 
 ## 0x4 模块
 
@@ -69,6 +82,16 @@ github_token = ''
   - Email-Format
   - Skymem
   - Veryvp
+  - PhoneBook
+  - Snov
+
+### 2022.2.19
+
+更新PhoneBook、Snov模块
+
+![PhoneBook&Snov_result](img/PhoneBook&Snov.png)
+
+![PhoneBook&Snov_result](img/PhoneBook&Snov_result.png)
 
 ### 2022.2.16
 
@@ -93,6 +116,8 @@ github_token = ''
 ## 0x6 感谢
 
 感谢网上开源的各大项目！！！
+
+- 特别感谢[Se7en](https://github.com/r00tSe7en)师傅对于接口的补充
 
 ## 0x7 免责声明
 

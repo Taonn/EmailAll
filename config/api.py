@@ -15,3 +15,10 @@ veryvp_password = ''
 
 # https://www.github.com
 github_token = ''
+
+# snov
+snov_username = ''
+snov_password = ''
+
+# phonebook
+pb_key = ''

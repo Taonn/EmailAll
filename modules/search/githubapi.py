@@ -61,7 +61,7 @@ class Github(Search):
                             else:
                                 continue
                         except Exception as e:
-                            logger.info('ERROR', e)
+                            logger.log('ALERT', e)
                             break
                 self.page_num += 1
 
@@ -69,7 +69,7 @@ class Github(Search):
                     break
 
         except Exception as e:
-            logger.info('ERROR', e)
+            logger.log('ALERT', e)
 
     def run(self):
         self.begin()
