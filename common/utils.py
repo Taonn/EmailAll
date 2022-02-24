@@ -141,7 +141,7 @@ def match_emails(domain, html):
     :return: 网页解析的邮箱合集
     """
     # reg_emails = re.compile(r'[a-zA-Z0-9.\-_+#~!$&\',;=:]+' + '@' + '[a-zA-Z0-9.-]*' + domain.replace('www.', ''))
-    reg_emails = re.compile(r"[a-zA-Z0-9][_|\.]*[a-zA-Z0-9]+@" + '[a-zA-Z0-9.-]*' + domain.replace('www.', ''))
+    reg_emails = re.compile(r'[a-zA-Z0-9.\-_]+' + '@' + '[a-zA-Z0-9.-]*' + domain.replace('www.', ''))
     temp = reg_emails.findall(html)
     emails = list(set(temp))
     true_emails = {str(email)[1:].lower().strip().replace('mailto:', '') if len(str(email)) > 1 and str(email)[0] == '.'
