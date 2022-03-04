@@ -1,3 +1,16 @@
+#!/usr/bin/env python
+# coding=utf-8
+
+'''
+Version: 0.1
+Autor: zmf96
+Email: zmf96@qq.com
+Date: 2022-03-04 07:15:27
+LastEditors: zmf96
+LastEditTime: 2022-03-04 08:05:37
+FilePath: /emailall/modules/collect.py
+Description: 
+'''
 #!/usr/bin/python3
 # coding=utf-8
 # Author: @Tao.
@@ -5,8 +18,8 @@
 import threading
 import importlib
 
-from config.log import logger
-from config import settings
+from emailall.config.log import logger
+from emailall.config import settings
 
 
 class Collect(object):
@@ -20,12 +33,13 @@ class Collect(object):
         """
         Get modules
         """
-        modules = ['certificates', 'check', 'datasets',
-                   'dnsquery', 'intelligence', 'search']
+        # modules = ['certificates', 'check', 'datasets',
+        #            'dnsquery', 'intelligence', 'search']
+        modules = ['datasets','search']
         for module in modules:
             module_path = settings.modules_storage_dir.joinpath(module)
             for path in module_path.rglob('*.py'):
-                import_module = f'modules.{module}.{path.stem}'
+                import_module = f'emailall.modules.{module}.{path.stem}'
                 self.modules.append(import_module)
 
     def import_func(self):

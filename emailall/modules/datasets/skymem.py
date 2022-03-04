@@ -5,7 +5,7 @@
 # @url    : http://github.com/Taonn
 # @author : Tao. (Taonn)
 
-from common.search import Search
+from emailall.common.search import Search
 import re
 
 

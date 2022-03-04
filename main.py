@@ -1,11 +1,24 @@
+#!/usr/bin/env python
+# coding=utf-8
+
+'''
+Version: 0.1
+Autor: zmf96
+Email: zmf96@qq.com
+Date: 2022-03-04 07:15:27
+LastEditors: zmf96
+LastEditTime: 2022-03-04 07:31:44
+FilePath: /emailall.py
+Description: 
+'''
 import fire
 
-from config.log import logger
+from emailall.config.log import logger
 from datetime import datetime
-from common import utils
-from modules.collect import Collect
-from common.output import Output
-from config import settings
+from emailall.common import utils
+from emailall.modules.collect import Collect
+from emailall.common.output import Output
+from emailall.config import settings
 import time
 
 yellow = '\033[01;33m'

@@ -7,10 +7,10 @@ import time
 import requests
 import urllib3
 
-from config.log import logger
+from emailall.config.log import logger
 from prettytable import PrettyTable
 from fake_useragent import UserAgent
-from common import utils
+from emailall.common import utils
 
 urllib3.disable_warnings()
 

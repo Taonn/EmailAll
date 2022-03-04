@@ -1,17 +1,10 @@
-#!/usr/bin/python3
-# -*- coding:utf-8 -*- 
-#
-# @name   : EmailAll - Email Information Gathering Tools
-# @url    : http://github.com/Taonn
-# @author : Tao. (Taonn)
-
 # !/usr/bin/python3
 # -*- coding:utf-8 -*-
 #
 # @name   : EmailAll - Email Information Gathering Tools
 # @url    : http://github.com/Taonn
 # @author : Tao. (Taonn)
-from common.search import Search
+from emailall.common.search import Search
 import time
 
 

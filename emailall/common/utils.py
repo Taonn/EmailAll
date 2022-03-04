@@ -6,9 +6,9 @@ import requests
 import re
 import json
 
-from config.log import logger
+from emailall.config.log import logger
 from pathlib import Path
-from config import settings
+from emailall.config import settings
 
 
 def check_net():

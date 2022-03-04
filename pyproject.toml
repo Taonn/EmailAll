@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "emailall"
+version = "0.1.0"
+description = "EmailAll is a powerful Email Collect tool —— 一款强大的邮箱收集工具"
+authors = ["zmf963 <zmf96@qq.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fake-useragent = "^0.1.11"
+loguru = "^0.6.0"
+lxml = "^4.8.0"
+prettytable = "^3.1.1"
+requests = "^2.27.1"
+urllib3 = "^1.26.8"
+fire = "^0.4.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

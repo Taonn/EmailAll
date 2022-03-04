@@ -7,8 +7,8 @@
 
 
 import time
-from common.search import Search
-from config.setting import emails
+from emailall.common.search import Search
+from emailall.config.setting import emails
 from lxml import etree
 
 

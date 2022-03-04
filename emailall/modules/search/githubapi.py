@@ -7,10 +7,10 @@
 import time
 import base64
 
-from common.search import Search
-from config import settings
-from config.log import logger
-from common import utils
+from emailall.common.search import Search
+from emailall.config import settings
+from emailall.config.log import logger
+from emailall.common import utils
 
 
 class Github(Search):
