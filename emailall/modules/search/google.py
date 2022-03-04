@@ -4,12 +4,12 @@
 # @name   : EmailAll - Email Information Gathering Tools
 # @url    : http://github.com/Taonn
 # @author : Tao. (Taonn)
-from common.search import Search
+from emailall.common.search import Search
 import time
 import re
 from urllib.parse import unquote
-from config.log import logger
-from config import settings
+from emailall.config.log import logger
+from emailall.config import settings
 
 
 class Google(Search):

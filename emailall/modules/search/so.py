@@ -6,8 +6,8 @@
 # @author : Tao. (Taonn)
 
 import time
-from common.search import Search
-from config.log import logger
+from emailall.common.search import Search
+from emailall.config.log import logger
 from lxml import etree
 import re
 

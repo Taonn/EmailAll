@@ -7,10 +7,10 @@
 import requests
 import re
 
-from common.search import Search
+from emailall.common.search import Search
 from urllib.parse import unquote, quote
-from config import settings
-from config.log import logger
+from emailall.config import settings
+from emailall.config.log import logger
 
 
 class Snov(Search):
